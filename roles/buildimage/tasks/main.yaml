@@ -1,7 +1,7 @@
 ---
 - name: Test Jenkins
-  ansible.builtin.command: kubectl get po -A
-  changed_when: ture
+  ansible.builtin.command: kubectl create namespace few
+  changed_when: false
 
 
 # - name: Test get pod
