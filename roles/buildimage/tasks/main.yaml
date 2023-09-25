@@ -1,7 +1,8 @@
 ---
 - name: Test Jenkins
-  ansible.builtin.debug:
-    msg: Few
+  ansible.builtin.command: kubectl get po -A
+  changed_when: ture
+
 
 # - name: Test get pod
 #   ansible.builtin.command: sudo kubectl get po -A
