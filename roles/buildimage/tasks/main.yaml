@@ -1,8 +1,8 @@
 ---
 - name: Get namespace
-  ansible.builtin.command: "/usr/local/bin/kubectl get namespace"
+  ansible.builtin.shell: kubectl get namespace
   register: namespace
-  changed_when: false
+  # when: namespace.changed == "false"
 
 - name: Debug
   ansible.builtin.debug:
