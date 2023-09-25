@@ -1,4 +1,4 @@
 ---
 - name: Create a k8s namespace
-  ansible.builtin.command: kubectl get po
+  ansible.builtin.command: kubectl get po -A
   changed_when: ture
