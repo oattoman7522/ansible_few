@@ -1,6 +1,7 @@
 ---
 - name: Test Jenkins
-  ansible.builtin.command: kubectl create namespace few
+  ansible.builtin.command: "/usr/local/bin/kubectl create namespace valen"
+  register: namespace
   changed_when: false
 
 
